@@ -1,0 +1,511 @@
+/* estilos.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #0080ff;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+
+.nav-link:hover {
+    background-color: white;
+    color: #2c3e50;
+    border-color: #fff;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+main h2, main h3 {
+    color: #2c3e50;
+}
+
+footer {
+    background-color: #0080ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+
+
+
+<style>
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #00ffff; /* color de neón */
+  background-color: rgba(0, 255, 255, 0.1);
+  box-shadow:
+    0 0 5px #00ffff,
+    0 0 10px #00ffff,
+    0 0 20px #00ffff,
+    0 0 40px #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+</style>
+
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .pregunta {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+    filter: blur(8px);
+    animation: floatIn 1s ease-out forwards;
+  }
+  
+  @keyframes floatIn {
+    0% {
+      opacity: 0;
+      transform: translateY(40px) scale(0.98);
+      filter: blur(8px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      filter: blur(0);
+    }
+  }
+  
+
+
+  .imagen-animada {
+    opacity: 0;
+    transform: scale(0.8) rotate(-5deg) translateY(30px);
+    filter: blur(10px);
+    animation: imagenIn 1s ease-out forwards;
+  }
+  
+  @keyframes imagenIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8) rotate(-5deg) translateY(30px);
+      filter: blur(10px);
+    }
+    60% {
+      transform: scale(1.05) rotate(2deg) translateY(-5px);
+      filter: blur(2px);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1) rotate(0deg) translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+
+
+
+
+  .imagenes-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.imagen-box {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    animation: aparecerSuave 1s ease-out forwards;
+    text-align: center;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border: 3px solid grey;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #0080ff;
+  color: white;
+}
+
+.flip-card-front p {
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: rgb(0, 0, 0);
+}
+
+.flip-card-back img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+
+<style>
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #0080ff;
+  color: white;
+  font-size: 1em;
+}
+
+tr:nth-child(even) {
+  background-color: #f0f0ff;
+}
+
+tr:hover {
+  background-color: #e0e0ff;
+}
+</style>
+
+
+
+
+
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.1) rotate(1deg);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.8);
+  z-index: 2;
+}
+
+.titulo {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 25px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+
+
+
+
+
+
+.card-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px; /* ← Espacio debajo de la galería de cartas */
+}
+
+.card {
+  position: relative;
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.card-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.4s ease, filter 0.4s ease;
+  z-index: 1;
+  filter: blur(2px); /* ← desenfocada por defecto */
+  transform: scale(1);
+}
+
+.card-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 10px;
+  font-size: 20px;
+  font-weight: 900;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* Hover en una tarjeta: se enfoca y hace zoom */
+.card:hover .card-background {
+  filter: blur(0px);     /* ← enfoca */
+  transform: scale(1.15); /* ← zoom */
+}
+
+/* Las demás se mantienen desenfocadas y opacas */
+.card-grid:hover > .card:not(:hover) .card-background,
+.card-grid:hover > .card:not(:hover) .card-category {
+  filter: blur(2px) brightness(0.5) saturate(0) contrast(1.2);
+}
+
+
+section {
+  display: flex;
+  width: 600px;
+  height: 430px;           
+  margin: 50px auto;      /* ← Espacio arriba y abajo de la sección */
+  justify-content: center; 
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+
+
+
+
+
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave al hover */
+}
+
+.image-item img {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px 33px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease, filter 0.3s ease; /* Transición suave */
+}
+
+.image-name {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: color 0.3s ease; /* Transición suave al hover */
+}
+
+/* Animación de hover */
+.image-item:hover img {
+  transform: translateY(-10px) rotate(5deg); /* La imagen sube y rota un poco */
+  filter: brightness(1.2); /* Hace la imagen más brillante al pasar el cursor */
+}
+
+.image-item:hover .image-name {
+  color: #000000; /* El texto cambia de color al pasar el cursor */
+  transform: translateY(-5px); /* El nombre también sube ligeramente */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenido-flex {
+    flex-direction: column;
+  }
+
+  .imagen-animada {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
+
+
